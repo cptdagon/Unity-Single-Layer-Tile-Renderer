@@ -1,0 +1,516 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 8
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 9
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFiltering: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &109661146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 109661148}
+  - component: {fileID: 109661147}
+  m_Layer: 0
+  m_Name: Tile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &109661147
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 109661146}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1796513057
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 2
+--- !u!4 &109661148
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 109661146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &832558040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 832558045}
+  - component: {fileID: 832558044}
+  - component: {fileID: 832558043}
+  - component: {fileID: 832558042}
+  - component: {fileID: 832558041}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &832558041
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832558040}
+  m_Enabled: 1
+--- !u!124 &832558042
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832558040}
+  m_Enabled: 1
+--- !u!92 &832558043
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832558040}
+  m_Enabled: 1
+--- !u!20 &832558044
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832558040}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &832558045
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832558040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1376046686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1376046687}
+  m_Layer: 0
+  m_Name: TileContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1376046687
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1376046686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2077282422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2077282424}
+  - component: {fileID: 2077282423}
+  m_Layer: 0
+  m_Name: Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2077282423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077282422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02da523116cb2194484de86fa2b10ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TileSprites:
+  - Name: Grass
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 1
+  - Name: Water
+    TileImage: {fileID: 21300000, guid: 10e8842b5ae2c394cb3882fb0e8efb52, type: 3}
+    TileType: 2
+  - Name: Mountain
+    TileImage: {fileID: 21300000, guid: 26fb41e637ac2ba42b072a7c983dc943, type: 3}
+    TileType: 4
+  - Name: Forest
+    TileImage: {fileID: 21300000, guid: b4298d1faa97f004eb5a82042c1f1f2e, type: 3}
+    TileType: 3
+  - Name: Road
+    TileImage: {fileID: 21300000, guid: ad4278f4aa9d7454f8976ed4e12d7d63, type: 3}
+    TileType: 5
+  - Name: River
+    TileImage: {fileID: 21300000, guid: 425daca280a35e948a5f5cec93317e35, type: 3}
+    TileType: 6
+  - Name: Shore
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: Reef
+    TileImage: {fileID: 21300000, guid: f95a432e1155512438d885cb74430449, type: 3}
+    TileType: 8
+  - Name: Desert
+    TileImage: {fileID: 21300000, guid: e1b14d201d31b1f4b8c34bd172f69d60, type: 3}
+    TileType: 9
+  - Name: HQ1
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 10
+  - Name: HQ2
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 10
+  - Name: Factory
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 11
+  - Name: Factory1
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 11
+  - Name: Factory2
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 11
+  - Name: City
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 12
+  - Name: City1
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 12
+  - Name: City2
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 12
+  - Name: Airport
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 13
+  - Name: Airport1
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 13
+  - Name: Airport2
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 13
+  - Name: Port
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 14
+  - Name: Port1
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 14
+  - Name: Port2
+    TileImage: {fileID: 21300000, guid: c60dd2293db840e40aed5f75d2eaa637, type: 3}
+    TileType: 14
+  - Name: RoadHori
+    TileImage: {fileID: 21300000, guid: 47aa739ef1d9ef942b0969b7e727e211, type: 3}
+    TileType: 5
+  - Name: RoadVerti
+    TileImage: {fileID: 21300000, guid: 34a8c118baf29f44ab18b86b8366efee, type: 3}
+    TileType: 5
+  - Name: RoadNE
+    TileImage: {fileID: 21300000, guid: 6cb80efdda4960746aae329970ebe747, type: 3}
+    TileType: 5
+  - Name: RoadSE
+    TileImage: {fileID: 21300000, guid: 73e4f1a8cb5a92440be06c8997f91b74, type: 3}
+    TileType: 5
+  - Name: RoadNW
+    TileImage: {fileID: 21300000, guid: 8df8aa65b822d76438be71f44f2e9c4f, type: 3}
+    TileType: 5
+  - Name: RoadSW
+    TileImage: {fileID: 21300000, guid: e3f8e98b60e269a4db072ec002fd5584, type: 3}
+    TileType: 5
+  - Name: RoadNSW
+    TileImage: {fileID: 21300000, guid: 59a537e526552ed45b241adea06e768f, type: 3}
+    TileType: 5
+  - Name: RoadESW
+    TileImage: {fileID: 21300000, guid: 77f6dadc8f056be40815061f11e140f3, type: 3}
+    TileType: 5
+  - Name: RoadNSE
+    TileImage: {fileID: 21300000, guid: 9985065bfc0355d4184e49f1af46953e, type: 3}
+    TileType: 5
+  - Name: RoadNWE
+    TileImage: {fileID: 21300000, guid: 426b4158cd5e7234fb70f47338b8edcd, type: 3}
+    TileType: 5
+  - Name: RiverHori
+    TileImage: {fileID: 21300000, guid: 038bb26bdc1e0924e926621b99f9e554, type: 3}
+    TileType: 6
+  - Name: RiverVerti
+    TileImage: {fileID: 21300000, guid: fda34652e57c6cc448be76f1c0cfe9e7, type: 3}
+    TileType: 6
+  - Name: RiverNE
+    TileImage: {fileID: 21300000, guid: ac56ca8d4d851654da1efb0c64310e32, type: 3}
+    TileType: 6
+  - Name: RiverSE
+    TileImage: {fileID: 21300000, guid: dde42d07ce06c6e4ab2eeab6fac3b133, type: 3}
+    TileType: 6
+  - Name: RiverNW
+    TileImage: {fileID: 21300000, guid: adb5145141441e749937ae3fb625d632, type: 3}
+    TileType: 6
+  - Name: RievrSW
+    TileImage: {fileID: 21300000, guid: 3d61ce9ae70192546b269f9e46428b2b, type: 3}
+    TileType: 6
+  - Name: RiverNSW
+    TileImage: {fileID: 21300000, guid: fcc9346d531cef64bb66d17ff889b5d2, type: 3}
+    TileType: 6
+  - Name: RiverESW
+    TileImage: {fileID: 21300000, guid: 800985f1d07d24541a63391632a1320d, type: 3}
+    TileType: 6
+  - Name: RiverNSE
+    TileImage: {fileID: 21300000, guid: a3f74506fc665c1479110c2e6321d2e4, type: 3}
+    TileType: 6
+  - Name: RiverNWE
+    TileImage: {fileID: 21300000, guid: 6742f1dcc29f5d44682fd0f7cfcfa4f4, type: 3}
+    TileType: 6
+  - Name: RiverMN
+    TileImage: {fileID: 21300000, guid: 2b82b7f007469134ca4c3f8b0e3eb904, type: 3}
+    TileType: 6
+  - Name: RiverMS
+    TileImage: {fileID: 21300000, guid: 06422ab622481f4479a7f63e99f46f8f, type: 3}
+    TileType: 6
+  - Name: RiverME
+    TileImage: {fileID: 21300000, guid: 16e91d39a5b44ad4b92ee6fd8541bd2b, type: 3}
+    TileType: 6
+  - Name: RiverMW
+    TileImage: {fileID: 21300000, guid: 280139cc9fe6ace4782a9204356f8f88, type: 3}
+    TileType: 6
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  - Name: ShoreHori
+    TileImage: {fileID: 21300000, guid: b1e616007251d364fbb7f57384b81d84, type: 3}
+    TileType: 7
+  MapSize: {x: 17, y: 16}
+  DefaultImage: {fileID: 21300000, guid: 9b098c6ab5d2d5f449e357f610c16fa6, type: 3}
+  TileContainerPrefab: {fileID: 1376046686}
+  TilePrefab: {fileID: 109661146}
+  CurrentPosition: {x: 8, y: 8}
+  ViewPortSize: {x: 20, y: 20}
+--- !u!4 &2077282424
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077282422}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
